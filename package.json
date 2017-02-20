@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
+    "dist:style":"gulp --gulpfile build/build-style.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
@@ -81,7 +82,7 @@
     "webpack-merge": "^2.6.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean-css": "^2.0.13",
+    "gulp-clean-css": "^3.x",
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "html-loader": "^0.3.0",
